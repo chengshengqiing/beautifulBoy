@@ -1,0 +1,14 @@
+server:
+  port: 4567
+
+spring:
+ application:
+    name: ApplicationXiaoFeiTest
+eureka:
+  instance:
+    instance-id: ApplicationXiaoFeiTest
+    appname: ${spring.application.name}   
+  client:
+    service-url: 
+      defaultZone: http://localhost:1234/eureka/
+    
